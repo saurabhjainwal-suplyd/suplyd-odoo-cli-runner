@@ -1,0 +1,1 @@
+# suplyd-odoo-cli-runner
