@@ -1,4 +1,6 @@
 import subprocess
+import time
+
 import typer
 import os.path as path
 
@@ -9,14 +11,17 @@ dcPath = path.join(pwd, "docker-compose.yaml")
 
 @app.command()
 def start():
+    print(" 🙏 Please wait setting things up....")
     out = subprocess.run(
         ("docker-compose", "-f", dcPath, "up", "-d", "--build"),
         capture_output=True,
         text=True,
     )
     if out.returncode != 0:
+        x = 1
         print(out.stderr)
     else:
+        x = 1
         print("🎉 Successfully started Suplyd Odoo Containers ✅ ")
         print("💿 Postgres Server is available on → ", "http://localhost:5432")
         print("🎮 Odoo Web Console is available at → ", "http://localhost:8069")
@@ -24,6 +29,7 @@ def start():
 
 @app.command()
 def stop():
+    print("Stopping containers...")
     out = subprocess.run(
         ("docker-compose", "-f", dcPath, "down", "-v"),
         capture_output=True,
