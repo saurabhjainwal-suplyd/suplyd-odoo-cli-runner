@@ -9,24 +9,30 @@ dcPath = path.join(pwd, "docker-compose.yaml")
 
 @app.command()
 def start():
-    try:
-        subprocess.Popen(
-            ["docker-compose", "-f", dcPath, "up", "-d", "--build"]
-        ).communicate()
+    out = subprocess.run(
+        ("docker-compose", "-f", dcPath, "up", "-d", "--build"),
+        capture_output=True,
+        text=True,
+    )
+    if out.returncode != 0:
+        print(out.stderr)
+    else:
         print("🎉 Successfully started Suplyd Odoo Containers ✅ ")
         print("💿 Postgres Server is available on → ", "http://localhost:5432")
         print("🎮 Odoo Web Console is available at → ", "http://localhost:8069")
-    except:
-        print("Is Docker Running?")
 
 
 @app.command()
 def stop():
-    try:
-        subprocess.Popen(["docker-compose", "-f", dcPath, "down", "-v"]).communicate()
-        print("👍 Successfully stopped docker-compose and removed the volumes.")
-    except:
-        print("Is Docker even running?")
+    out = subprocess.run(
+        ("docker-compose", "-f", dcPath, "down", "-v"),
+        capture_output=True,
+        text=True,
+    )
+    if out.returncode != 0:
+        print(out.stderr)
+    else:
+        print("🎉 Successfully stoped Suplyd Odoo Containers ✅ ")
 
 
 if __name__ == "__main__":
