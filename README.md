@@ -1,8 +1,15 @@
-# suplyd-odoo-cli-runner
+# suplyd-odoo
 
-### Steps
+## About
+`suplyd-odoo` is a cli tool to run Suplyd's Odoo locally without any hasel. 
 
-1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo`/`python3 -m pip install sup-odoo`/`python -m pip install sup-odoo`
-2. To start the Odoo instance run this command `sup-odoo start`/`python3 -m sup-odoo start`/`python -m sup-odoo start`
-3. To stop the Odoo instance run this command `sup-odoo stop`/`python3 -m sup-odoo stop`/`python -m sup-odoo stop`
-4. To see help `sup-odoo --help`/`python3 -m sup-odoo --help`/`python -m sup-odoo --help`
+## Requirements
+1. `docker` should be installed on the system
+2. Make sure python version is above `3.7`
+
+## Installation
+1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo` 
+
+## Steps to run Odoo locally
+1. To start the Odoo instance run this command `python3 -m sup-odoo start`/`python -m sup-odoo start`
+2. To stop the Odoo instance run this command `python3 -m sup-odoo stop`/`python -m sup-odoo stop`
