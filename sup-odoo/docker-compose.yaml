@@ -11,7 +11,7 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
   odoo:
-    image: saurabhsuplyd/suplyd_odoo:1.1.9
+    image: saurabhsuplyd/suplyd_odoo:latest
     ports:
       - "8069:8069"
     restart: always
