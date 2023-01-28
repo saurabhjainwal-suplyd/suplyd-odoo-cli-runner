@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "start containers",
+      "type": "python",
+      "request": "launch",
+      "program": "/Users/saurabh-suplyd/Desktop/supOdoo/sup-odoo/__main__.py",
+      "console": "integratedTerminal",
+      "args": ["start"]
+    },
+    {
+      "name": "stop containers",
+      "type": "python",
+      "request": "launch",
+      "program": "/Users/saurabh-suplyd/Desktop/supOdoo/sup-odoo/__main__.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": ["stop"]
+    }
+  ]
+}
