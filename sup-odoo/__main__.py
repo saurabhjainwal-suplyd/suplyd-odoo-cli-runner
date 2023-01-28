@@ -55,16 +55,19 @@ async def main(command: str):
         await stop()
         sys.exit(0)
     else:
-        print("Error bad command input")
+        print("Exit bad command input")
         sys.exit(1)
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 2:
-        print("Error - more than once arguments were passed")
+        print("Exit - more than once arguments were passed")
+        sys.exit(1)
+    elif len(sys.argv) <= 1:
+        print("Exit - no command was passed")
         sys.exit(1)
     if sys.argv[1] != "start" and sys.argv[1] != "stop":
-        print("Error - invalid command was passed")
+        print("Exit - invalid command was passed")
         print("Valid choices are 1) start, 2) stop")
         sys.exit(1)
     asyncio.run(main(sys.argv[1]))
