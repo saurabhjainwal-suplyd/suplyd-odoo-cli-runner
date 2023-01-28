@@ -7,8 +7,9 @@ lib_name = "odoo"
 
 setup(
     name="suplyd-odoo",
-    version="1.1.4",
+    version="1.2.0",
     description="Simple cli tool for Suplyd devs to run local Odoo setup without hassel",
+    long_description="Simple cli tool for Suplyd devs to run local Odoo setup without hassel",
     url="https://github.com/saurabhjainwal-suplyd/suplyd-odoo-cli-runner",
     author="saurabhjainwal",
     author_email="saurabh@suplyd.app",
