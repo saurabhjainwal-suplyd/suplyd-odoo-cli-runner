@@ -12,4 +12,5 @@
 
 ## Steps to run Odoo locally
 1. To start the Odoo instance run this command `python3 -m sup-odoo start`/`python -m sup-odoo start`
+   1. Wait for the containers to start, keep in mind the first time could take a while to setup the containers
 2. To stop the Odoo instance run this command `python3 -m sup-odoo stop`/`python -m sup-odoo stop`
