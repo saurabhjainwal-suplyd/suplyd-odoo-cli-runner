@@ -23,14 +23,6 @@ elif [ "$cmd" == "-g" ]; then
     echo "Pushed to git"
 elif [ "$cmd" == "-d" ]; then
     echo "Preparing to Deploy.."
-    git add .
-    wait
-    git commit -m "$commit"
-    wait
-    git push origin
-    wait
-    echo "Pushed to git"
-    echo "Now deploying to PIP."
     python3 -m twine upload dist/*
     wait
     echo "Done"

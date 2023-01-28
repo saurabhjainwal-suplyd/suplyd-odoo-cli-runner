@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: suplyd-odoo
+Version: 1.2.3
+Summary: Simple cli tool for Suplyd devs to run local Odoo setup without hassel
+Home-page: https://github.com/saurabhjainwal-suplyd/suplyd-odoo-cli-runner
+Author: saurabhjainwal
+Author-email: saurabh@suplyd.app
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+Simple cli tool for Suplyd devs to run local Odoo setup without hassel
+

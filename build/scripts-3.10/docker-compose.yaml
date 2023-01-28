@@ -1,0 +1,25 @@
+version: "3.5"
+services:
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  odoo:
+    image: saurabhsuplyd/suplyd_odoo:latest
+    ports:
+      - "8069:8069"
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - data:/var/lib/odoo
+
+volumes:
+  db_data:
+  data:

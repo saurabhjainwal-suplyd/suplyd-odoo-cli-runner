@@ -1,0 +1,13 @@
+README.md
+setup.py
+./sup-odoo/__init__.py
+./sup-odoo/__main__.py
+./sup-odoo/docker-compose.yaml
+sup-odoo/__init__.py
+sup-odoo/__main__.py
+sup-odoo/docker-compose.yaml
+suplyd_odoo.egg-info/PKG-INFO
+suplyd_odoo.egg-info/SOURCES.txt
+suplyd_odoo.egg-info/dependency_links.txt
+suplyd_odoo.egg-info/requires.txt
+suplyd_odoo.egg-info/top_level.txt
