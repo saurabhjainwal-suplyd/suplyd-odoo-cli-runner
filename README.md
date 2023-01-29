@@ -22,6 +22,6 @@
 ## To make it easy
 
 1. You can also set alias for the command `python3 -m sup-odoo`/ `python -m sup-odoo` in your sell's `.rc` file
-2. For example in `zsh`
+2. For example in `.zshrc`
    1. you can add following line
       `alias sup-doo="python -m sup-odoo"` or `alias sup-doo="python3 -m sup-odoo"`
