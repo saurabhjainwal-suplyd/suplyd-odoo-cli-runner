@@ -11,7 +11,7 @@
 
 ## Installation
 
-1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo`
+1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo=1.2.9`
 
 ## Steps to run Odoo locally
 
