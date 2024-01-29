@@ -64,6 +64,9 @@ def main(command: str):
     elif command == "stop":
         stop()
         sys.exit(0)
+    elif command == "clean":
+        clean()
+        sys.exit(0)
     else:
         print("Exit bad command input")
         sys.exit(1)
