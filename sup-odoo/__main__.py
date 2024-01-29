@@ -35,7 +35,7 @@ def start():
 
 
 def stop():
-    cmd = ("docker-compose", "-f", dcPath, "down", "-v")
+    cmd = ("docker-compose", "-f", dcPath, "down")
     sp = spinner("Stopping Containers...")
     out = run_docker_compose(cmd)
     if out.returncode != 0:
@@ -45,6 +45,17 @@ def stop():
         sp.stop()
         print("🎉 Successfully stopped Suplyd Odoo Containers ✅")
 
+
+def clean():
+    cmd = ("docker-compose", "-f", dcPath, "down", "-v")
+    sp = spinner("Stopping Containers...")
+    out = run_docker_compose(cmd)
+    if out.returncode != 0:
+        sp.stop()
+        print(out.stderr)
+    else:
+        sp.stop()
+        print("🎉 Successfully stopped Suplyd Odoo Containers and cleaned ✅")
 
 def main(command: str):
     if command == "start":
