@@ -76,7 +76,7 @@ if __name__ == "__main__":
     elif len(sys.argv) <= 1:
         print("Exit - no command was passed")
         sys.exit(1)
-    if sys.argv[1] != "start" and sys.argv[1] != "stop":
+    if sys.argv[1] != "start" and sys.argv[1] != "stop" and sys.argv[1] != "clean":
         print("Exit - invalid command was passed")
         print("Valid choices are 1) start, 2) stop")
         sys.exit(1)
