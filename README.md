@@ -30,3 +30,6 @@
 ### Clean
 
 3. To stop the Odoo instance run this command `python3 -m sup-odoo clean` or `python -m sup-odoo clean`
+
+## Video
+https://github.com/saurabhjainwal-suplyd/suplyd-odoo-cli-runner/assets/111360235/7444269f-9884-4709-b6e2-f8243d52f394
