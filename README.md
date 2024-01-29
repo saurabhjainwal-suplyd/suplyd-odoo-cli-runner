@@ -11,17 +11,22 @@
 
 ## Installation
 
-1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo=1.2.9`
+1. Install `sup-odoo` cli tool by running this command `pip install suplyd-odoo=1.2.9` ( https://pypi.org/project/suplyd-odoo/1.2.9/ )
+2. Set alias for the command `python3 -m sup-odoo`/ `python -m sup-odoo` in your sell's `.rc` file
+3. How to know which shell you are using `echo "$SHELL"`
+   1. For example in a `zsh` shell you can update the `.zshrc` file by adding following line `alias sup-doo="python -m sup-odoo"` or `alias sup-doo="python3 -m sup-odoo"` at the top of it.
+4. Once Odoo is running please ask Labeeb for a new DB backup zip file.
 
 ## Steps to run Odoo locally
 
-1. To start the Odoo instance run this command `python3 -m sup-odoo start`/ `python -m sup-odoo start`
-   1. Wait for the containers to start, keep in mind the first time could take a while to setup the containers
-2. To stop the Odoo instance run this command `python3 -m sup-odoo stop`/ `python -m sup-odoo stop`
+### Start
 
-## To make it easy
+1. To start the Odoo instance run this command `python3 -m sup-odoo start` or `python -m sup-odoo start`
 
-1. You can also set alias for the command `python3 -m sup-odoo`/ `python -m sup-odoo` in your sell's `.rc` file
-2. For example in `.zshrc`
-   1. you can add following line
-      `alias sup-doo="python -m sup-odoo"` or `alias sup-doo="python3 -m sup-odoo"`
+### Stop
+
+2. To stop the Odoo instance run this command `python3 -m sup-odoo stop` or `python -m sup-odoo stop`
+
+### Clean
+
+3. To stop the Odoo instance run this command `python3 -m sup-odoo clean` or `python -m sup-odoo clean`
